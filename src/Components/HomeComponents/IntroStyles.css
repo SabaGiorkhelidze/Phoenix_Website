@@ -1,0 +1,24 @@
+
+
+.intro-container {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 3%; /* Adjust the factor for the desired parallax effect */
+  background-image: url("../../assets/phoenixintro.jpg");
+  width: 100%;
+  height: 80vh;
+
+  @media (max-width: 768px) {
+    /* Adjust styles for screens with a width of 768px or less (typical mobile devices) */
+    background-position: 50% 0%; /* Modify the vertical position for mobile */
+    height: 50vh; /* Adjust the height to fill the entire screen height on mobile */
+  }
+}
+
+.outlined-text {
+  font-size: 1.8rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-fill-color: white; /* Set the text color to white */
+  -webkit-text-stroke: 0.13rem black; /* Add a 2px black outline */
+  text-align: center;
+}
