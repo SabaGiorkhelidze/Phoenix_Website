@@ -33,18 +33,20 @@ const Navbar: React.FC = () => {
         changeHeader ? "text-white " : "text-black"
       }`}
     >
-      <nav className="flex items-center max-w-screen-xl mx-auto  md:px-6 py-3  poppins font-semibold">
+      <nav className="flex items-center max-w-screen-xl mx-auto  md:px-6 py-5  poppins font-semibold">
+  
         {/* left  */}
         <Link to={"/"}>
           <motion.div
             whileHover={{ scale: 1.1 }}
-            className="mx-3 flex md:mx-8 my-1 cursor-pointer flex-row"
+            className="mx-3 flex md:mx-32 my-1 cursor-pointer flex-row justify-center "
           >
-            <img src={logo} alt="" className="w-8 h-8" />
-            <h1 className="mx-4">ფენიქსი</h1>
+            <img src={logo} alt="" className="w-12 h-12 " />
+            {/* <h1 className="mx-4">ფენიქსი</h1> */}
           </motion.div>
         </Link>
         <div className="flex flex-grow"></div>
+  
         {/* right  */}
         <div
           className="flex mx-4 md:hidden"

@@ -28,7 +28,7 @@ const Card = ({
     <>
       <div className="w-full flex flex-col items-center my-4">
         <div className=" flex flex-col md:flex-row md:mx-44">
-          <div className="self-center my-2">
+          <div className="md:self-center flex justify-start mx-8 md:mx-0 md:justify-center my-2">
             <img
               src={picture}
               alt=""

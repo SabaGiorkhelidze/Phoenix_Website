@@ -19,7 +19,7 @@ const Intro = () => {
 
   return (
     <div
-      className="w-full flex items-center  bg-cover bg-center my-16 intro-container"
+      className="w-full flex items-center  bg-cover bg-center  my-24 intro-container"
       
     >
       <div className="w-full   text-white">

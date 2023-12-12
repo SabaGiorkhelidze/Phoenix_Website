@@ -18,10 +18,10 @@ type ParamTypes = {
 };
 
 const DetailsPage = () => {
-  const { id } = useParams<ParamTypes>(); 
+  const { id } = useParams<ParamTypes>();
 
-  const parsedId: number  = parseInt(id, 10);
-  const card = CardData.find((item: CardDataTypes) => item.id === parsedId); 
+  const parsedId: number = parseInt(id, 10);
+  const card = CardData.find((item: CardDataTypes) => item.id === parsedId);
 
   if (!card) {
     return <div>Card not found.</div>;

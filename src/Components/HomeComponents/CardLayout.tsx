@@ -3,7 +3,7 @@ import { CardData } from "../../Data/CardsData";
 import Card from "./Card";
 const CardLayout = () => {
   return (
-    <div>
+    <div className="w-full ">
       {CardData.map((card) => (
         <Card
           id={card.id}
