@@ -68,6 +68,11 @@ const Navbar: React.FC = () => {
               FAQ
             </motion.div>
           </Link>
+          <Link to={"/quiz"}>
+            <motion.div whileHover={{ scale: 1.1 }} className="mx-6 my-1">
+              Quiz Game
+            </motion.div>
+          </Link>
         </div>
       </nav>
 

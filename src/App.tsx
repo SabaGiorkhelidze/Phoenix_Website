@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/game/:id" element={<DetailsPage />} />
-          {/* <Route path="/quiz" element={<QuizPage />} /> */}
+          <Route path="/quiz" element={<QuizPage />} />
           <Route path="/faq" element={<FAQ />} />
         </Routes>
       </ChakraProvider>

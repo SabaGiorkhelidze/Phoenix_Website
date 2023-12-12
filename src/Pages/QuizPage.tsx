@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import quizData from "../Data/quizData";
+import AnswersLayoutComponent from "../Components/QuizComponents/AnswersLayoutComponent";
 
 type Question = {
   question: string;
@@ -23,16 +24,21 @@ const Quiz: React.FC = () => {
   };
 
   return (
-    <div className="my-20">
+    <div className="my-32 flex justify-center items-center flex-col w-full border-2 border-red-300">
       {currentQuestion < quizData.length ? (
         <div>
-          <h2>Question {currentQuestion + 1}</h2>
-          <p>{quizData[currentQuestion].question}</p>
-          {quizData[currentQuestion].options.map((option, index) => (
-            <button key={index} onClick={() => handleAnswerClick(option)}>
-              {option}
-            </button>
-          ))}
+          <h1>Question {currentQuestion + 1}</h1>
+          <h2 className=" font-medium">{quizData[currentQuestion].question}</h2>
+
+          <AnswersLayoutComponent
+            quizData={quizData}
+            score={score}
+            currentQuestion={currentQuestion}
+            scoreIncrement={() => setScore(score + 1)}
+            nextQuestion={() => setCurrentQuestion(currentQuestion + 1)}
+            handleAnswerClick={handleAnswerClick}
+          />
+          
         </div>
       ) : (
         <div>

@@ -11,12 +11,12 @@ const AboutPhoenix = () => {
           <img src={Phoenix} alt="" className="md:w-96 md:h-96" />
         </div>
 
-        <div className=" md:w-3/4 flex flex-col break-all">
+        <div className=" md:w-3/4 flex flex-col break-normal">
           <div className="self-start md:my-16">
-            <h1 className="text-center text-2xl">ფენიქსის შესახებ</h1>
+            <h1 className="text-center text-3xl">ფენიქსის შესახებ</h1>
           </div>
           <div className="px-1 text-left">
-            <div className="">{text}</div>
+            <div className="text-xl">{text}</div>
           </div>
         </div>
       </div>
