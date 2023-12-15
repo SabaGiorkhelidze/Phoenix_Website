@@ -1,6 +1,6 @@
-import React from "react";
 import MemberCard from "./MemberCard";
 import { TeamData } from "../../Data/TeamData";
+
 const TeamComponent = () => {
   return (
     <div className="py-6">

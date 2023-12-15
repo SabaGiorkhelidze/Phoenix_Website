@@ -2,20 +2,20 @@ import { quizDataType } from "../../Data/quizData";
 import AnswerButton from "./AnswerButton";
 type AnswersLayoutPropTypes = {
   quizData: Array<quizDataType>;
-  currentQuestion: number;
+  currentQuestionIndex: number;
   score: number;
   handleAnswerClick: (selectedOption: string) => void;
 };
 const AnswersLayoutComponent = ({
   quizData,
-  currentQuestion,
+  currentQuestionIndex,
 
   handleAnswerClick,
 }: AnswersLayoutPropTypes) => {
   return (
     <div>
       <div className="flex flex-col justify-evenly gap-5">
-        {quizData[currentQuestion].options.map((option, index) => (
+        {quizData[currentQuestionIndex].options.map((option, index) => (
           <AnswerButton
             key={index}
             option={option}
