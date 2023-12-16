@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { QuizContext } from "../Context/QuizContext";
 import quizData from "../Data/quizData";
 import QuizLayout from "../Components/QuizComponents/QuizLayout";
+import QuizStartGame from "../Components/QuizComponents/QuizStartGame";
+import FinalScore from "../Components/QuizComponents/FinalScore";
 
 export type Question = {
   question: string;
@@ -14,6 +16,7 @@ const QuizPage: React.FC = () => {
   const [score, setScore] = useState<number>(0);
   const [timer, setTimer] = useState<number>(10);
   const [interval, setInterval] = useState<number>(0);
+  const [startQuiz, setStartQuiz] = useState<boolean>(false);
 
   const handleAnswerClick = (selectedOption: string) => {
     if (selectedOption === quizData[currentQuestionIndex].correctAnswer) {
@@ -36,21 +39,27 @@ const QuizPage: React.FC = () => {
     score,
     timer,
     interval,
+    startQuiz,
     setCurrentQuestionIndex,
     setScore,
     setTimer,
+    setStartQuiz,
     value: {
       handleAnswerClick,
       handleNextQuestion,
     },
   };
+  // const handleFinalScore = () => {};
 
   return (
     <QuizContext.Provider value={contextValue}>
-      <div className="my-32">
-        <h1>hello</h1>
-        <QuizLayout />
-      </div>
+      {currentQuestionIndex === 9 ? (
+        <FinalScore />
+      ) : (
+        <div className="my-32">
+          {startQuiz ? <QuizLayout /> : <QuizStartGame />}
+        </div>
+      )}
     </QuizContext.Provider>
   );
 };
