@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -43,23 +42,23 @@ const Card = ({
             </div>
             <div className="mx-5">
               <div className="my-2 text-start">
-                <h1 className="text-[#000060] font-normal">{descriptionOne}</h1>
+                <h3 className="text-[#000060] font-normal ">{descriptionOne}</h3>
               </div>
               <div className="my-2 text-start">
-                <h1 className="text-[#000060] font-normal">{descriptionTwo}</h1>
+                <h3 className="text-[#000060] font-normal">{descriptionTwo}</h3>
               </div>
               <div className=" md:px-0 text-start">
-                <h1 className="text-[#000060] font-normal">
+                <h3 className="text-[#000060] font-normal">
                   მოთამაშეების რაოდენობა: {playerAmount}+
-                </h1>
+                </h3>
               </div>
               <div className="text-start">
-                <h1 className="text-[#000060] font-normal">
+                <h3 className="text-[#000060] font-normal">
                   საშუალო დრო: {averageTime} წთ
-                </h1>
+                </h3>
               </div>
               <div className="text-start">
-                <h1 className="text-[#000060]">ფასი: {price} ლარი</h1>
+                <h3 className="text-[#000060]">ფასი: {price} ლარი</h3>
               </div>
             </div>
 

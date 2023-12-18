@@ -28,7 +28,7 @@ const DetailsPage = () => {
   }
 
   return (
-    <div className="my-14 flex justify-center items-center">
+    <div className="my-24 flex justify-center items-center">
       <div className="flex justify-center items-center flex-col w-full ">
         <img src={armosulaDetails} alt="" />
 
@@ -41,18 +41,18 @@ const DetailsPage = () => {
             />
           </div>
           <div className="md:w-full">
-            <div className="text-start px-10  md:flex md:justify-start md:flex-col md:w-full gap-3">
-              <h1 className="text-3xl font-bold text-[#000060] my-2">
+            <div className="text-start px-10  md:flex md:justify-start md:flex-col md:w-full ">
+              <h1 className="text-3xl font-bold text-[#000060] my-1">
                 მოკლე აღწერა
               </h1>
-              <h1 className="">{card.descriptionOne}</h1>
-              <h1>{card.descriptionTwo}</h1>
-              <h1 className="font-normal">
+              <h3 className="">{card.descriptionOne}</h3>
+              <h3>{card.descriptionTwo}</h3>
+              <h3 className="font-normal">
                 მოთამაშეების რაოდენობა: {card.playerAmount}+
-              </h1>
-              <h1 className="font-normal">
+              </h3>
+              <h3 className="font-normal">
                 საშუალო დრო: {card.averageTime} წთ.
-              </h1>
+              </h3>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const DetailsPage = () => {
             <h1 className="text-[#000060] text-3xl font-bold text-center my-4">
               წესები
             </h1>
-            <h1>{card.rules}</h1>
+            <h3>{card.rules}</h3>
           </div>
         </div>
 

@@ -44,6 +44,7 @@ const QuizPage: React.FC = () => {
     setScore,
     setTimer,
     setStartQuiz,
+    setInterval,
     value: {
       handleAnswerClick,
       handleNextQuestion,
@@ -56,7 +57,7 @@ const QuizPage: React.FC = () => {
       {currentQuestionIndex === 9 ? (
         <FinalScore />
       ) : (
-        <div className="my-32">
+        <div className="my-40">
           {startQuiz ? <QuizLayout /> : <QuizStartGame />}
         </div>
       )}

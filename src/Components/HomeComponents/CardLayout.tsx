@@ -1,4 +1,3 @@
-import React from "react";
 import { CardData } from "../../Data/CardsData";
 import Card from "./Card";
 const CardLayout = () => {
@@ -6,6 +5,7 @@ const CardLayout = () => {
     <div className="w-full ">
       {CardData.map((card) => (
         <Card
+          key={card.id}
           id={card.id}
           name={card.name}
           picture={card.picture}
