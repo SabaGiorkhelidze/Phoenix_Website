@@ -1,23 +1,22 @@
-import React from "react";
-import { Accordion, AccordionPanel, Box, Text } from "grommet";
 import DropDown from "../Components/FAQComponents/DropDown";
+import Question from "../Components/FAQComponents/Question";
+import { ListQuestions, TextQuestions } from "../Data/FAQData";
 
 const FAQ = () => {
   // texts={['one, two, three']} header={['']}
   return (
-    <div className="my-20">
-      <DropDown
-        header={"ფოტოს ატვირთვა"}
-        texts={[
-          "On your computer",
-          "go to a web browser.",
-          "Go to Google Images.",
-          "Click Search by image Google Lens.",
-          "Click Upload a file.",
-          "Select an image.",
-          "Click Open or Choose.",
-        ]}
-      />
+    <div className="my-32">
+      <div className="my-10 px-12">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+      
+      {TextQuestions.map((item) => (
+        <Question header={item.header} text={item.text} />
+      ))}
+
+      {ListQuestions.map((item) => (
+        <DropDown header={item.header} texts={item.texts} />
+      ))}
     </div>
   );
 };

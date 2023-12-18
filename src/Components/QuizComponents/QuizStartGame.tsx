@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const QuizStartGame = () => {
   const { setStartQuiz } = useContext(QuizContext);
   return (
-    <div className="text-xl flex justify-between h-full gap-10   items-center flex-col border-2  border-red-300 mt-44">
+    <div className="text-xl flex justify-between h-full gap-10   items-center flex-col  mt-44">
       {/* <div> */}
       <h1>Start Game?</h1>
       <motion.button

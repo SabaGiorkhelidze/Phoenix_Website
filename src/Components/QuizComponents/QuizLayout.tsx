@@ -30,7 +30,7 @@ const QuizLayout: React.FC = () => {
   }, [currentQuestionIndex, setTimer, handleNextQuestion]);
 
   return (
-    <div className="flex justify-center items-center flex-col w-full border-2 border-red-300">
+    <div className="flex justify-center items-center flex-col w-full ">
       <QuizGame currentQuestionIndex={currentQuestionIndex}
         quizData={quizData}  
         score={score}

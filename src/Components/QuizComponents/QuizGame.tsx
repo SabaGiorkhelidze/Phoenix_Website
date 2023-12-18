@@ -20,7 +20,7 @@ const QuizGame: React.FC<QuizGameProps> = ({
   return (
     <>
       {currentQuestionIndex < quizData.length ? (
-        <div className="border-2 border-purple-600">
+        <div className="">
           <h1>Question {currentQuestionIndex + 1}</h1>
           <h2 className="font-medium break-words">
             {quizData[currentQuestionIndex].question}

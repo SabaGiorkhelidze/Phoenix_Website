@@ -1,5 +1,3 @@
-import React from "react";
-// import { Accordion, AccordionPanel, Box, Text } from "grommet";
 import {
   Accordion,
   AccordionItem,
@@ -16,7 +14,7 @@ type FAQPropTypes = {
 };
 const DropDown = ({ header, texts }: FAQPropTypes) => {
   return (
-    <div className="my-20">
+    <div className="my-4 px-12">
       <Accordion allowMultiple>
         <AccordionItem>
           <h2>
@@ -27,7 +25,7 @@ const DropDown = ({ header, texts }: FAQPropTypes) => {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4}>
+          <AccordionPanel>
             <OrderedList>
               {texts.map((text) => (
                 <ListItem>
