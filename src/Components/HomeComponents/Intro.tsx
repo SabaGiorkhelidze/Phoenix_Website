@@ -19,10 +19,10 @@ const Intro = () => {
 
   return (
     <div
-      className="w-full flex items-center  bg-cover bg-center  my-24 intro-container"
+      className="w-full flex items-center  bg-cover bg-center  my-24 py-52"
       
     >
-      <div className="w-full   text-white">
+      <div className="w-full h-full   text-white">
         <h1 className=" font-bold md:text-5xl text-center ">ფენიქსის შექმნილი თამაშები</h1>
       </div>
     </div>

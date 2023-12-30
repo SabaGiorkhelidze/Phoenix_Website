@@ -2,7 +2,8 @@ import { CardData } from "../../Data/CardsData";
 import Card from "./Card";
 const CardLayout = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full bg-white py-8">
+      <div className="w-full flex justify-center items-center py-3"><h1 className=" ">კატალოგი</h1> </div>
       {CardData.map((card) => (
         <Card
           key={card.id}

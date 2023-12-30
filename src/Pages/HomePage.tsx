@@ -4,7 +4,7 @@ import Card from "../Components/HomeComponents/Card";
 import CardLayout from "../Components/HomeComponents/CardLayout";
 const HomePage = () => {
   return (
-    <div className="w-full"
+    <div className="w-full intro-container"
     >
         <Intro />
         <CardLayout />

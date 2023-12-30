@@ -4,6 +4,7 @@ type ListQuestions = {
 };
 
 type TextQuestions = {
+  id: number,
   header: string;
   text: string;
 };
@@ -43,22 +44,27 @@ export const ListQuestions: ListQuestions[] = [
 
 export const TextQuestions: TextQuestions[] = [
   {
+    id: 1,
     header: "Returns and Refunds",
-    text: "Our return policy allows returns within 30 days of purchase. Contact customer support for return instructions.",
+    text: "Our return policy allows returns within 30 days of purchase. Contact customer support for return instructions. Our return policy allows returns within 30 days of purchase. Contact customer support for return instructions. ",
   },
   {
+    id: 2,
     header: "Technical Support",
-    text: "For common technical issues, refer to our troubleshooting guide at [link]. If issues persist, contact our technical support team at [contact details].",
+    text: "For common technical issues, refer to our troubleshooting guide at [link]. If issues persist, contact our technical support team at [contact details].For common technical issues, refer to our troubleshooting guide at [link]. If issues persist, contact our technical support team at [contact details].",
   },
   {
+    id: 3,
     header: "Privacy and Security",
     text: "Your personal information is securely stored and never shared with third parties. Review our privacy policy for details.",
   },
   {
+    id: 4,
     header: "Product Usage",
     text: "Refer to the product manual for detailed instructions on proper usage and guidelines.",
   },
   {
+    id: 5,
     header: "Contact Information",
     text: "You can reach our customer support team via email at [email] or by calling [phone number].",
   },
